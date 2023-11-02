@@ -1,4 +1,14 @@
+#ifndef FUNC_H
+#define FUNC_H
+
 #include <iostream>
+#include <string>
 
+struct Card {
+    std::string rank;
+    std::string suit;
+};
 
-void findPerfectNumbers(int start, int end, int result[], int& count);
+void displayCard(const Card& card);
+
+#endif 
