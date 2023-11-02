@@ -1,4 +1,6 @@
 #include <iostream>
 
-double power(double base, int exponent);
+
+int sumInRange(int a, int b);
+
 

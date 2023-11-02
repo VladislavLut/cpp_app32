@@ -1,14 +1,13 @@
 #include "Func.h"
 
-double power(double base, int exponent) {
-    double result = 1.0;
-    for (int i = 0; i < abs(exponent); ++i) {
-        result *= base;
+int sumInRange(int a, int b) {
+    int sum = 0;
+    int start = (a < b) ? a : b;
+    int end = (a < b) ? b : a;
+
+    for (int i = start + 1; i < end; ++i) {
+        sum += i;
     }
 
-    if (exponent < 0) {
-        result = 1.0 / result;
-    }
-
-    return result;
+    return sum;
 }

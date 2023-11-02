@@ -1,18 +1,17 @@
 #include "Func.h"
 
 int main() {
-    double base;
-    int exponent;
+    int num1, num2;
 
-    std::cout << "Enter the base: ";
-    std::cin >> base;
+    std::cout << "Enter the first number: ";
+    std::cin >> num1;
 
-    std::cout << "Enter the exponent: ";
-    std::cin >> exponent;
+    std::cout << "Enter the second number: ";
+    std::cin >> num2;
 
-    double result = power(base, exponent);
+    int result = sumInRange(num1, num2);
 
-    std::cout << "Result: " << result << std::endl;
+    std::cout << "Sum of numbers in the range: " << result << std::endl;
 
     return 0;
 }
