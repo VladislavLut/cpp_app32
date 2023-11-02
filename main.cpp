@@ -1,17 +1,30 @@
-#include "Func.h"
+#include "func.h"
 
 int main() {
-    int num1, num2;
+    int start, end;
 
-    std::cout << "Enter the first number: ";
-    std::cin >> num1;
+    std::cout << "Enter the start of the interval: ";
+    std::cin >> start;
 
-    std::cout << "Enter the second number: ";
-    std::cin >> num2;
+    std::cout << "Enter the end of the interval: ";
+    std::cin >> end;
 
-    int result = sumInRange(num1, num2);
+    const int MAX_SIZE = end - start + 1;
+    int result[MAX_SIZE];
+    int count;
 
-    std::cout << "Sum of numbers in the range: " << result << std::endl;
+    findPerfectNumbers(start, end, result, count);
+
+    if (count == 0) {
+        std::cout << "No perfect numbers in the given interval." << std::endl;
+    }
+    else {
+        std::cout << "Perfect numbers in the given interval: ";
+        for (int i = 0; i < count; ++i) {
+            std::cout << result[i] << " ";
+        }
+        std::cout << std::endl;
+    }
 
     return 0;
 }

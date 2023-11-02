@@ -1,6 +1,7 @@
 #include <iostream>
 
 
-int sumInRange(int a, int b);
+void findPerfectNumbers(int start, int end, int result[], int& count);
+
 
 
