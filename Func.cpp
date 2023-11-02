@@ -1,4 +1,4 @@
-#include "func.h"
+#include "Func.h"
 
 bool isPerfect(int number) {
     int sum = 1;

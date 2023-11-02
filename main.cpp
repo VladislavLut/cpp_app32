@@ -1,4 +1,4 @@
-#include "func.h"
+#include "Func.h"
 
 int main() {
     int start, end;
